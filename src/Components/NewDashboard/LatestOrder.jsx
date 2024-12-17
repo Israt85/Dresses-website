@@ -3,7 +3,7 @@ import Table from "./Table";
 
 const LatestOrder = () => {
     return (
-        <div>
+        <div className="bg-white shadow-xl py-10 rounded-lg">
             <div className="flex justify-between my-6 mx-2 font-Inter">
                 <p className="text-lg">Latest Order</p>
                 <p className="text-sm flex gap-1 items-center">More

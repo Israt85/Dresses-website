@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Login from './Pages/Login/Login.jsx';
 import DashboardLayout from './Layouts/DashboardLayout.jsx';
 import NewDashboard from './Pages/Dashboard/NewDashboard.jsx';
+import Sales from './Pages/Sales/Sales.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -14,7 +15,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Route path="register" element={<Register />} /> */}
     <Route path='dashboard' element={<DashboardLayout />}>
     <Route path="newdash" element={<NewDashboard/>} />
-    {/* <Route path="register" element={<Register />} />  */}
+    <Route path="sales" element={<Sales/>} /> 
   </Route>
   </Route>
     </Routes>

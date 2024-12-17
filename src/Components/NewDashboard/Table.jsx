@@ -1,11 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Table = () => {
+    const [data,setData]= useState([]);
+    useEffect(()=>{
+        fetch('/Data.json')
+        .then(res=>res.json()
+        .then(data=>{
+            console.log(data)
+            setData(data)
+        })
+        )
+    },[])
     return (
         <div>
            <div className="overflow-x-auto">
   <table className="table table-xs font-Inter">
-    <thead className='bg-[#F8F8F8]'>
+    <thead className='bg-[#F8F8F8] w-full h-16 rounded-md'>
       <tr className='font-Inter text-base'>
         <th>Products</th>
         <th>
@@ -13,7 +23,7 @@ const Table = () => {
                 <option value="QTY">QTY</option>
             </select>
         </th>
-        <th><select name="" id="">
+        <th className='text-center'><select name="" id="">
                 <option value="Date">Date</option>
             </select></th>
         <th><select name="" id="">
@@ -32,18 +42,19 @@ const Table = () => {
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td className='flex items-center gap-2'>
-            <img className='h-10 w-10 rounded-full' src="https://s3-alpha-sig.figma.com/img/d883/8805/aebf5014b4b46e1dd0f3e6ca4e7f3b7b?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BYxy2I0cLfnnSh7A0yvcQ~asgLXFHl2vUuMI-7KZthGGcCnzXeRFosyPRYVrouajo~bTgXE5YIa~fIbEIxN1lt2J5QnLVC~IfZ4hb1mgndnyuOUqGEf2TolY1eDyXw9~FOqvjwvBDLXDHiyM5j7NsrrrKdBiUwRKnmNb4cEiAoXb~u4t~IlxV8GevVKtsNZAQ185GUtPtI1JZsRs1KwOtbl1rsyT7g6fMacGwUGzaAZt8tmhnK5XIr9qZowXbQkRfYZF3KoEBz3AJ9cCDyZcYEKEwZ0XwwRoJX80atksVZ7YqUE6DjxiHCFv3Y7L0vvLk26EOpT~ywMp6nhDa53SnQ__" alt="" />
-            <p className='text-base font-Inter'>Analog Table Clock</p>
-        </td>
-        <td className='font-Inter text-base'>X2</td>
-        <td className='font-Inter text-base'>Feb 5, 2020</td>
-        <td className='font-Inter text-base'>$253.82</td>
-        <td className='font-Inter text-base'>$60.76</td>
-        <td className='font-Inter text-base'>Pending</td>
-        <td className='flex gap-2 items-center my-5'>
-        <svg width="28" height="28" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    {data?.map((dat) => (
+  <tr className='text-[#555F7E]' key={dat.id}>
+  <td className='flex items-center gap-2'>
+      <img className='h-10 w-10 rounded-full' src={dat?.img} alt="" />
+      <p className='text-base font-Inter'>{dat?.Product}</p>
+  </td>
+  <td className='font-Inter text-right px-4 w-8 text-base'>{dat?.QTY}</td>
+  <td className='font-Inter text-center text-base'>{dat?.Date}</td>
+  <td className='font-Inter text-center text-base'>{dat?.Revenue}</td>
+  <td className='font-Inter text-center text-base'>{dat?.NetProfit}</td>
+  <td className={`font-Inter text-center text-lg ${dat?.Status=='Pending'? 'text-[#FF392B]':dat?.Status=='Shipping'?'text-[#1C2A53]':dat?.Status=='Refund'?'text-[#FFA000]':'text-[#279F51]'}`}>{dat?.Status}</td>
+  <td className='flex gap-2 items-center my-5'>
+  <svg width="28" height="28" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8.33207 13.3438H13.8949" stroke="#C8CAD8" stroke-width="1.85443" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M11.1133 3.14383C11.3593 2.89792 11.6928 2.75977 12.0406 2.75977C12.2128 2.75977 12.3833 2.79368 12.5424 2.85958C12.7015 2.92548 12.846 3.02207 12.9678 3.14383C13.0895 3.26559 13.1861 3.41015 13.252 3.56924C13.3179 3.72833 13.3518 3.89884 13.3518 4.07104C13.3518 4.24324 13.3179 4.41375 13.252 4.57285C13.1861 4.73194 13.0895 4.87649 12.9678 4.99825L5.241 12.725L2.76843 13.3432L3.38657 10.8706L11.1133 3.14383Z" stroke="#C8CAD8" stroke-width="1.85443" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -67,7 +78,8 @@ const Table = () => {
 </svg>
 
 </td>
-      </tr>
+</tr>
+))}
     </tbody>
   </table>
 </div> 

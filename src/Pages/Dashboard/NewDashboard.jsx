@@ -18,7 +18,7 @@ const NewDashboard = () => {
         <div className='w-full h-[516px] border'>
             {/* <Chart1></Chart1> */}
         </div>
-        <div className='w-full min-h-screen border my-10'>
+        <div className='w-full min-h-screen my-10'>
            <LatestOrder></LatestOrder>
         </div>
        </div>
