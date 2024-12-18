@@ -1,6 +1,7 @@
 import React from 'react';
 import Section1 from '../../Components/NewDashboard/Section1';
 import Chart2 from '../../Components/NewDashboard/Sales/Chart2';
+import SalesOrder from '../../Components/NewDashboard/Sales/SalesOrder';
 
 const Sales = () => {
     return (
@@ -18,6 +19,9 @@ const Sales = () => {
         </div>
         <div className='w-full bg-white rounded-lg shadow-xl h-[500px] my-10 border'>
            <Chart2></Chart2>
+        </div>
+        <div>
+            <SalesOrder></SalesOrder>
         </div>
         </div>
     );

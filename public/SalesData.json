@@ -1,0 +1,102 @@
+[
+    {
+        "OrderId": "#53200002",
+        "Products": "Analog Table Clock",
+        "Date": "Feb 5, 2020",
+        "Customer": "Ronald Jones",
+        "Revenue": "$253.82",
+        "NetProfit": "$60.76",
+        "Status": "Pending"
+  
+    },
+    {
+        "OrderId": "#53200003",
+        "Products": "Basket with handles",
+        "Date": "Sep 8, 2020",
+        "Customer": "Jacob Mckinney",
+        "Revenue": "$556.24",
+        "NetProfit": "$66.41",
+        "Status": "Shipping"
+      
+    },
+    {
+        "OrderId": "#53200004",
+        "Products": "Flower vase",
+        "Date": "Dec 21, 2020",
+        "Customer": "Randall Murphy",
+        "Revenue": "$115.26",
+        "NetProfit": "$95.66",
+        "Status": "Refund"
+        
+    },
+    {
+        "OrderId": "#53200005",
+        "Products": "Deco accessory",
+        "Date": "Aug 13, 2020",
+        "Customer": "Philip Webb",
+        "Revenue": "$675.51",
+        "NetProfit": "$84.80",
+        "Status": "Completed"
+    
+    },
+    {
+        "OrderId": "#53200006",
+        "Products": "Pottery Vase",
+        "Date": "May 8, 2020",
+        "Customer": "Arthur Bell",
+        "Revenue": "$910.71",
+        "NetProfit": "$46.52",
+        "Status": "Shipping"
+      
+    },
+    {
+        "OrderId": "#53200007",
+        "Products": "Rose Holdback",
+        "Date": "Nov 15, 2020",
+        "Customer": "Gregory Nguyen",
+        "Revenue": "$897.90",
+        "NetProfit": "$81.54",
+        "Status": "Completed"
+    
+    },
+    {
+        "OrderId": "#53200008",
+        "Products": "Table Lamp",
+        "Date": "Sep 14, 2020",
+        "Customer": "Soham Henry",
+        "Revenue": "$563.43",
+        "NetProfit": "$17.46",
+        "Status": "Pending"
+  
+    },
+    {
+        "OrderId": "#53200009",
+        "Products": "Wall Clock",
+        "Date": "May 15, 2020",
+        "Customer": "Jenny Hawkins",
+        "Revenue": "$883.96",
+        "NetProfit": "$43.08",
+        "Status": "Refund"
+        
+    },
+    {
+        "OrderId": "#53200010",
+        "Products": "Flowering Cactus",
+        "Date": "Sep 2, 2020",
+        "Customer": "Diane Cooper",
+        "Revenue": "$162.15",
+        "NetProfit": "$86.65",
+        "Status": "Completed"
+    
+    },
+    {
+        "OrderId": "#53200012",
+        "Products": "Shell Collection",
+        "Date": "Sep 20, 2020",
+        "Customer": "Max Williamson",
+        "Revenue": "$378.34",
+        "NetProfit": "$49.08",
+        "Status": "Completed"
+    
+    }
+]
