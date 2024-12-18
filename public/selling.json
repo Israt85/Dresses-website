@@ -1,73 +1,81 @@
 [
     {
-      "Product": "Wireless Earbuds",
+      "Product": "Nike v22",
       "ID": "EL-00552",
       "Orders": "1500",
       "Price": "$130",
       "Category": "Undergarments",
       "Stock": "Less than 100",
-      "img": "https://example.com/images/wireless-earbuds.jpg",
-      "type": "Gadget"
+      "img": "https://s3-alpha-sig.figma.com/img/04f2/59d8/dd91de187262715d8a850216d0f3cad6?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=qOlLwVagEKJxpWPVbP3UGNVhxAnzY6~BWtY4Bf2J2J-I19ijiAXDhQItVBsjisKb3iMSD8hq5QkVaYHDGbp7SCAbam51tOwEB3bjiayR6b5en5lKszISGMjotDzIfkXz-O0nWDUkzDEl124UbSiJ7dGYm0xZnNxUw4kn5Dv6hR8IGQzf7BvXGSMIXjM3FNOK9vullv0K4~97-ZKYjRa3jjvF3dKnQA3BX~A39hZtu3Tn6-p1vRoMwA2fhVUCmXbXt8-LvfqxGyHTuUhauaWY5oVDyuog7OnM-B-Kqam10hERh6VUnJ5B~7TaYCFJYeVLyhgLQ3NVvtDk1NbF1P7sEw__",
+      "type": "Running Shoes",
+      "status":"Pending"
     },
     {
-      "Product": "Gaming Mouse",
+      "Product": "Instax Camera",
       "ID": "EL-00551",
       "Orders": "1100",
       "Price": "$45",
       "Category": "Cosmetics",
       "Stock": "More than 500",
-      "img": "https://example.com/images/gaming-mouse.jpg",
-      "type": "Peripheral"
+      "img": "https://s3-alpha-sig.figma.com/img/4a48/12b5/549fccd3276470148bb7c47ecb179dda?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Zlvj2NTu8Ym1WyT8oQrnN8uvMwytAu9dgivKCuhjaygqg4yuVfWTCR1rh2HZtcRi9QiBu9xvDATwQknR5GClf5qPtjWq7KkNOoeYKtZUp6jeiQcHPTbEx49i7AkuNT5gJ3dekNmseUbqtcvfr7KikDx46U2QnUD9PDnveXLzj7WPw0lPDRMXOT66IYMbBbf0iF7ZaygRpion3H0-YQNFRhV34BXuPSltAGIPAcgU0bjSwOBOHMZP0gumCqPpXErKUVqUmTFcElGH-K1HWANe7wkDSEuMuoXKQTPzXivYzvI0xCDwRTMRvteGzQOP~8MbmK8tpPrwaXw6LYX-gjtAVg__",
+      "type": "Portable camera",
+       "status":"Approved"
     },
     {
-      "Product": "Smartphone Case",
+      "Product": "Chair",
       "ID": "EL-00550",
       "Orders": "1800",
       "Price": "$80",
       "Category": "Undergarments",
       "Stock": "Less than 100",
-      "img": "https://example.com/images/smartphone-case.jpg",
-      "type": "Accessory"
+      "img": "https://s3-alpha-sig.figma.com/img/c3c2/4fd7/f1f2964e313e870b3095e16567163957?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IXivrEa3BNBr75FFNvOVybbhlp~-6I6PvcbXCq0t1wwbX2S5PMskXg~whj0zeWRuuWHOwAH0XRIOMUe60o0AL9PVTorJbTVrM0OH2KsEypWLhE0ti~FSDyba6F3Z-WsTKW4m0uDI6p3vPGbNoF2KG43przKuXJF3hsD8OOABKqVxpsLBS936yD7Ii9yeQzrcUiY5klsxA8V8pdnrBu8RarKoO8lFo-bsuUZD5hvnyoVw2Tyk8KTlB28eHzVirD8mieZYyPF520IbZ166cM6JooJ-7KZgNQk1MB9hV5EoQjzjG04-WvaBIbudMvrvgMacxSv1E1ezdgYHxgVwgg7Daw__",
+      "type": "Relaxing chair",
+       "status":"Rejected"
     },
     {
-      "Product": "Bluetooth Speaker",
+      "Product": "Laptop",
       "ID": "EL-00549",
       "Orders": "800",
       "Price": "$500",
       "Category": "Cosmetics",
       "Stock": "Less than 50",
-      "img": "https://example.com/images/bluetooth-speaker.jpg",
-      "type": "Audio"
+      "img": "https://s3-alpha-sig.figma.com/img/95fd/b937/b50c903067f778d4fef78d02f6cd50f0?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Hc2uFsPCZSDeL5mYwmlNKxlOMT4iEvsD5OIuZMZc4bKvlXmug3reYjxg603nojUsPD8l8cgl3XQzM~j510SN6HF8Kd72fEk-uBzW2i6J2Ay9PEAhUiIfHjWVsAWexn75rfO2fJ8n4bTrBOZBFq2LeEs9b4o4quComaiHSjoEIMj1wrzJXvuyLA74fVtPT-0c5AxBXkyvadUmLHfO0MTaJhRqkOel025GNffex7CanGeCbEMQwOBuZH2GuqXwRZLDRO1QEteknGLx9QtQQ1oTfzkaK6xr0u3ZR6zr9XVb88zzXxdzsOT1dIgJiiv4q4WxG7pkyaa~5JGF8jyVaYe1Jw__",
+      "type": "Macbook pro 13",
+      "status":"Approved"
+
     },
     {
-      "Product": "Running Shoes",
+      "Product": "Watch",
       "ID": "EL-00548",
       "Orders": "600",
       "Price": "$15",
       "Category": "Undergarments",
       "Stock": "More than 400",
-      "img": "https://example.com/images/running-shoes.jpg",
-      "type": "Footwear"
+      "img": "https://s3-alpha-sig.figma.com/img/3454/afe8/d8d4b51be1499061461f96bcc9644d44?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j~QgthwjQUIH0uIxsLgfN9kd86z24PcoXHH-ScASI2bfeoeUpTfiYZFuysbx79U8oIiBu~d4z0maYLerBjZZ0YxFjjEn99yO9oJiFODb0go6Gp4VgEEkgWln5BUNYLzN-SFKgYQ29co4KLGe9TeFVoOkMROOzU98JUmwBATHVmq~XyvpdgGvGa7WVWQNPUzwTxAAS4pr16NXy912xQ3Q3y1RmtFcS9IEO7-FHaLF0~YHO9Z-Nb0zMJzNIRvslVM-fSpvi2VSDbL0VA723TBPQVqgAEmVtc3OVexAMZQJLgjfpGyirq4-Scv8L04ntGIYEexEuwYJCej6lE-8Duam~w__",
+      "type": "Digital watch",
+      "status":"Approved"
     },
     {
-      "Product": "Water Bottle",
+      "Product": "Mobile",
       "ID": "EL-00547",
       "Orders": "200",
       "Price": "$500",
       "Category": "Cosmetics",
       "Stock": "More than 100",
-      "img": "https://example.com/images/water-bottle.jpg",
-      "type": "Health"
+      "img": "https://s3-alpha-sig.figma.com/img/54e9/8a3f/5fedfa8ae20fac07ed4261ed6bb7d154?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D-eERkDuf6ryjEkrtXtm2XzHjyP6pHAlLa7K3dgfFwMwSFo-3CUMOUk4V8i~ld9LZ6wriOfIBZzQPhds-gmXxfWMqLdSkVk5KYJAriEEFXvT-AnuDjub3Lpt0N~BSB0t9g9-g7ydxrS3UcgquXc7IGUJj60kl9ukJU755Yfg6~Pm2lj4jAMBsvpyxfwc7JonSD0CCun0RCmpSVvfWUPNf8qpmEk~Wf95z0VqvWti8Jcwc~S2RlgxRsIvIQ~3FF7Q~PEdZj1Yb8ZZGBTPIkdkbWohwNS0Xt~ISieEvTDl4BAW5DiO22z5FWwUGEhxnXF8KXLgBpwwk7S7r5WBSwBliQ__",
+      "type": "iphone 13",
+      "status":"Approved"
     },
     {
-      "Product": "Yoga Mat",
+      "Product": "Xerry",
       "ID": "EL-00546",
       "Orders": "150",
       "Price": "$08",
       "Category": "Undergarments",
       "Stock": "Less than 100",
-      "img": "https://example.com/images/yoga-mat.jpg",
-      "type": "Fitness"
+      "img": "https://s3-alpha-sig.figma.com/img/8f0b/4f49/01ad6ca23610af2cee37378274a776f5?Expires=1735516800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JXKnfJleRKsw24zMa1Md65op~letb1xoZKwwc74bZ38qlB4Ii8vgVDVKx3n17mZ3jCoTM-8VvjkqRmiPh-8PEX9pqk5alftbZPNxJpgOdVmZGXxR81OTBvClzih2Mw8paVmIW-HoFrRR9PCtnwAdHAXY4-wmgOSC0~sbBRG5osynX3gi-qnpia6CpQi04CTU5AVH~8h9V8stTPeMV~BSXWpbKFONC6vUxF1I-xwFgZ3PxWI6ajRBnSBpxJpxYJaJW1RGdEhY10pYV0OUQubTzlRiDu4EjXnNEg5BeQlEya47w0ucxuFgSz4ci~qdVc9gGUdFKiVAARbQhULDSzra2A__",
+      "type": "Perfume",
+      "status":"Approved"
     }
   ]
   

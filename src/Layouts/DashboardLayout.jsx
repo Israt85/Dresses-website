@@ -96,12 +96,13 @@ const DashboardLayout = () => {
             >
               Edit Product
             </li>
+            <Link to='status'>
             <li
               className="px-4 py-2 cursor-pointer"
             
             >
               Status
-            </li>
+            </li></Link>
           </ul>
         </div>
       )}

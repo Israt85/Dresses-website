@@ -7,7 +7,7 @@ const AllProducts = () => {
            <div className='my-6'>
             <p className='text-xl font-Inter font-bold'>All Products</p>
            </div>
-          <div className='w-full bg-white shadow-lg  h-[700px] rounded-xl '>
+          <div className='w-full bg-white shadow-lg  h-[800px] rounded-xl '>
           <div className='flex justify-between p-6 mx-auto'>
                <div>
                 <p className='text-xl font-bold'>Top Selling Product</p>
