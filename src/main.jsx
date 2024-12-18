@@ -5,6 +5,7 @@ import Login from './Pages/Login/Login.jsx';
 import DashboardLayout from './Layouts/DashboardLayout.jsx';
 import NewDashboard from './Pages/Dashboard/NewDashboard.jsx';
 import Sales from './Pages/Sales/Sales.jsx';
+import AllProducts from './Pages/Products/AllProducts.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -16,6 +17,7 @@ createRoot(document.getElementById('root')).render(
     <Route path='dashboard' element={<DashboardLayout />}>
     <Route path="newdash" element={<NewDashboard/>} />
     <Route path="sales" element={<Sales/>} /> 
+    <Route path="allproducts" element={<AllProducts/>} /> 
   </Route>
   </Route>
     </Routes>

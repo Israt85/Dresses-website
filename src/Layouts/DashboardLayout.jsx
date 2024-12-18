@@ -1,8 +1,13 @@
-import React from 'react';
-import { NavLink, Outlet } from 'react-router';
+import React, { useEffect, useState } from 'react';
+import { Link, NavLink, Outlet } from 'react-router';
 import logo from '../assets/Images/4155ecce83f378e39dae19cecca7729b.png'
 
 const DashboardLayout = () => {
+    const [clickable, setClickable]= useState(false)
+   const handleClick = ()=>{
+    setClickable(!clickable)
+    console.log('clicked');
+   }
     return (
         <div className='bg-[#F8F8F8] flex'>
             <div className='w-[218px] flex flex-col pt-10 items-center gap-6 m-4 rounded-lg text-[#6F757E] bg-white min-h-screen'>
@@ -37,14 +42,71 @@ const DashboardLayout = () => {
                </NavLink>
 
                 {/* Product */}
-                <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.4185 5.25L6.94425 1.7235C7.0935 1.575 7.28925 1.5 7.485 1.5C7.94475 1.5 8.25 1.87875 8.25 2.27175C8.25 2.45925 8.181 2.64975 8.02575 2.805L5.58075 5.25H3.4185ZM12.4193 5.25H14.5815L11.0557 1.7235C10.9065 1.575 10.7108 1.5 10.515 1.5C10.0553 1.5 9.75 1.87875 9.75 2.27175C9.75 2.45925 9.819 2.64975 9.97425 2.805L12.4193 5.25ZM0 6.75V8.25H0.48225C0.88275 8.25 1.248 8.478 1.42425 8.838L4.5 16.5H13.5L16.5765 8.8395C16.7512 8.47875 17.118 8.25 17.5185 8.25H18V6.75H0Z" fill="#6F757E"/>
-</svg>
+    <div className="relative ">
+      {/* Trigger button */}
+      <div
+        onClick={handleClick}
+        className="flex px-6 items-center gap-4 w-[168px] h-[45px] cursor-pointer rounded-md text-white bg-[#EC008C]  hover:shadow-md"
+      >
+        <svg className={`${clickable? 'fill-white':'fill-[#6F757E]'}`}
+          width="18"
+          height="18"
+          viewBox="0 0 18 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.4185 5.25L6.94425 1.7235C7.0935 1.575 7.28925 1.5 7.485 1.5C7.94475 1.5 8.25 1.87875 8.25 2.27175C8.25 2.45925 8.181 2.64975 8.02575 2.805L5.58075 5.25H3.4185ZM12.4193 5.25H14.5815L11.0557 1.7235C10.9065 1.575 10.7108 1.5 10.515 1.5C10.0553 1.5 9.75 1.87875 9.75 2.27175C9.75 2.45925 9.819 2.64975 9.97425 2.805L12.4193 5.25ZM0 6.75V8.25H0.48225C0.88275 8.25 1.248 8.478 1.42425 8.838L4.5 16.5H13.5L16.5765 8.8395C16.7512 8.47875 17.118 8.25 17.5185 8.25H18V6.75H0Z"
+            fill=""
+          />
+        </svg>
 
+        <p>Products</p>
 
-                    <p>Products</p>
-                </div>
+        {/* Dropdown Arrow */}
+        <svg
+          className={`w-16 h-16 ml-auto transition-transform ${
+            clickable ? "rotate-180" : ""
+          }`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 011.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </div>
+
+      {/* Dropdown menu */}
+      {clickable && (
+        <div className="absolute w-[168px] border border-gray-300 rounded-md z-10 text-white bg-[#EC008C]  shadow-md ">
+          <ul className='text-right px-4'>
+            <Link to='allproducts'>
+            <li
+              className="px-4 py-2 cursor-pointer"
+              
+            >
+              All Products
+            </li></Link>
+            <li
+              className="px-4 py-2 cursor-pointer"
+            >
+              Edit Product
+            </li>
+            <li
+              className="px-4 py-2 cursor-pointer"
+            
+            >
+              Status
+            </li>
+          </ul>
+        </div>
+      )}
+    </div>
+
 
                 {/* Shipping */}
                 <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>

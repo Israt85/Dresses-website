@@ -1,0 +1,73 @@
+[
+    {
+      "Product": "Wireless Earbuds",
+      "ID": "EL-00552",
+      "Orders": "1500",
+      "Price": "$130",
+      "Category": "Undergarments",
+      "Stock": "Less than 100",
+      "img": "https://example.com/images/wireless-earbuds.jpg",
+      "type": "Gadget"
+    },
+    {
+      "Product": "Gaming Mouse",
+      "ID": "EL-00551",
+      "Orders": "1100",
+      "Price": "$45",
+      "Category": "Cosmetics",
+      "Stock": "More than 500",
+      "img": "https://example.com/images/gaming-mouse.jpg",
+      "type": "Peripheral"
+    },
+    {
+      "Product": "Smartphone Case",
+      "ID": "EL-00550",
+      "Orders": "1800",
+      "Price": "$80",
+      "Category": "Undergarments",
+      "Stock": "Less than 100",
+      "img": "https://example.com/images/smartphone-case.jpg",
+      "type": "Accessory"
+    },
+    {
+      "Product": "Bluetooth Speaker",
+      "ID": "EL-00549",
+      "Orders": "800",
+      "Price": "$500",
+      "Category": "Cosmetics",
+      "Stock": "Less than 50",
+      "img": "https://example.com/images/bluetooth-speaker.jpg",
+      "type": "Audio"
+    },
+    {
+      "Product": "Running Shoes",
+      "ID": "EL-00548",
+      "Orders": "600",
+      "Price": "$15",
+      "Category": "Undergarments",
+      "Stock": "More than 400",
+      "img": "https://example.com/images/running-shoes.jpg",
+      "type": "Footwear"
+    },
+    {
+      "Product": "Water Bottle",
+      "ID": "EL-00547",
+      "Orders": "200",
+      "Price": "$500",
+      "Category": "Cosmetics",
+      "Stock": "More than 100",
+      "img": "https://example.com/images/water-bottle.jpg",
+      "type": "Health"
+    },
+    {
+      "Product": "Yoga Mat",
+      "ID": "EL-00546",
+      "Orders": "150",
+      "Price": "$08",
+      "Category": "Undergarments",
+      "Stock": "Less than 100",
+      "img": "https://example.com/images/yoga-mat.jpg",
+      "type": "Fitness"
+    }
+  ]
+  
