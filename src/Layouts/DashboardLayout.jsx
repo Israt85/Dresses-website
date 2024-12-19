@@ -82,7 +82,8 @@ const DashboardLayout = () => {
 
       {/* Dropdown menu */}
       {clickable && (
-        <div className="absolute w-[168px] border border-gray-300 rounded-md z-10 text-white bg-[#EC008C]  shadow-md ">
+        <div className="absolute w-[168px] border border-gray-300 rounded-md h-auto
+         text-white bg-[#EC008C]  shadow-md ">
           <ul className='text-right px-4'>
             <Link to='allproducts'>
             <li
@@ -91,11 +92,11 @@ const DashboardLayout = () => {
             >
               All Products
             </li></Link>
-            <li
+           <Link to="editproduct"> <li
               className="px-4 py-2 cursor-pointer"
             >
               Edit Product
-            </li>
+            </li></Link>
             <Link to='status'>
             <li
               className="px-4 py-2 cursor-pointer"
