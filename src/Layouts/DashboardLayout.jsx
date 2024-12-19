@@ -13,7 +13,7 @@ const DashboardLayout = () => {
             <div className='w-[218px] flex flex-col pt-10 items-center gap-6 m-4 rounded-lg text-[#6F757E] bg-white min-h-screen'>
                 <img className='w-[116px] h-[43px]' src={logo} alt="" />
                 {/* Dashboard */}
-               <NavLink className="" to="newdash">
+               <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")} to="newdash">
                <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_316_1631)">
@@ -30,7 +30,7 @@ const DashboardLayout = () => {
                 </div></NavLink>
 
                 {/* sales */}
-               <NavLink to="sales">
+               <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")} to="sales">
                <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M15.7485 6.37305H2.2515C1.82475 6.37305 1.50075 6.72105 1.50075 7.1223C1.50075 7.2108 1.422 6.6858 2.77125 15.1165C2.829 15.481 3.14325 15.748 3.51225 15.748H14.4885C14.8575 15.748 15.1718 15.481 15.2295 15.1165C16.5803 6.67905 16.4993 7.21155 16.4993 7.12155C16.4993 6.70305 16.1573 6.37305 15.7485 6.37305ZM15.0255 4.1103H3.003C2.61 4.1103 2.25225 4.4268 2.25225 4.86555C2.25225 4.9263 2.24475 4.87755 2.35725 5.62305H15.6713C15.7853 4.86405 15.7755 4.9248 15.7755 4.8663C15.7755 4.4313 15.4238 4.1103 15.0255 4.1103ZM3.04575 3.3603H14.9828C15.0263 3.0333 15.024 3.0408 15.024 2.9988C15.024 2.49555 14.5928 2.24805 14.2733 2.24805H3.75525C3.35325 2.24805 3.0045 2.5728 3.0045 2.99805C3.0045 3.04005 3.0015 3.0303 3.04575 3.3603Z" fill="#6F757E"/>
@@ -46,7 +46,7 @@ const DashboardLayout = () => {
       {/* Trigger button */}
       <div
         onClick={handleClick}
-        className="flex px-6 items-center gap-4 w-[168px] h-[45px] cursor-pointer rounded-md text-white bg-[#EC008C]  hover:shadow-md"
+        className={`${clickable? "flex px-6 items-center gap-4 w-[168px] h-[45px] cursor-pointer rounded-md text-white bg-[#EC008C]  hover:shadow-md":"flex items-center gap-1 "}`}
       >
         <svg className={`${clickable? 'fill-white':'fill-[#6F757E]'}`}
           width="18"
@@ -65,7 +65,7 @@ const DashboardLayout = () => {
 
         {/* Dropdown Arrow */}
         <svg
-          className={`w-16 h-16 ml-auto transition-transform ${
+          className={`w-10 h-10 ml-auto transition-transform ${
             clickable ? "rotate-180" : ""
           }`}
           xmlns="http://www.w3.org/2000/svg"
