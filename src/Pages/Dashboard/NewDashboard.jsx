@@ -2,6 +2,8 @@ import React from 'react';
 import Section1 from '../../Components/NewDashboard/Section1';
 import Chart1 from '../../Components/Charts/Chart1';
 import LatestOrder from '../../Components/NewDashboard/LatestOrder';
+import { PieChartComponent } from './PieChart';
+import { BarChartComponent } from './BarChart';
 
 const NewDashboard = () => {
     return (
@@ -15,8 +17,15 @@ const NewDashboard = () => {
         <div>
             <Section1></Section1>
         </div>
-        <div className='w-full h-[516px] border'>
-            {/* <Chart1></Chart1> */}
+        <div className='w-full my-10 h-[516px]'>
+          <div className='flex gap-6 items-center'>
+            <div className='w-[600px] h-[450px] rounded-3xl bg-white'>
+            <BarChartComponent></BarChartComponent>
+            </div>
+          <div className='w-[400px] rounded-3xl bg-white h-[450px]'>
+          <PieChartComponent></PieChartComponent>
+          </div>
+          </div>
         </div>
         <div className='w-full min-h-screen my-10'>
            <LatestOrder></LatestOrder>
