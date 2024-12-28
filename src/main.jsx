@@ -11,6 +11,8 @@ import EditProduct from './Pages/Products/EditProduct.jsx';
 import Profile from './Pages/Profile/Profile.jsx';
 import EditProfile from './Pages/Profile/EditProfile.jsx';
 import Order from './Pages/Order/Order.jsx';
+import Shipping from './Pages/Shipping/Shipping.jsx';
+import Message from './Pages/Message/Message.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -26,6 +28,8 @@ createRoot(document.getElementById('root')).render(
     <Route path="editproduct" element={<EditProduct/>} /> 
     <Route path="profile" element={<Profile/>} /> 
     <Route path="order" element={<Order/>} /> 
+    <Route path="shipping" element={<Shipping/>} /> 
+    <Route path="message" element={<Message/>} /> 
     {/* <Route path="edit" element={<EditProfile/>} />  */}
   </Route>
   </Route>

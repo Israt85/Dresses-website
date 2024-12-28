@@ -1,0 +1,112 @@
+[
+  {
+      "id": "1",
+      "orderId": "#ORD001",
+      "customerId": "#CUST001",
+      "customerName": "John Doe",
+      "date": "2024-12-20",
+      "productName": "Wireless Headphones",
+      "price": 120.99,
+      "status": "Delivered",
+      "img": "https://example.com/images/wireless-headphones.jpg"
+  },
+  {
+      "id": "2",
+      "orderId": "#ORD002",
+      "customerId": "#CUST002",
+      "customerName": "Jane Smith",
+      "date": "2024-12-19",
+      "productName": "Smartwatch",
+      "price": 199.99,
+      "status": "Shipped",
+      "img": "https://example.com/images/smartwatch.jpg"
+  },
+  {
+      "id": "3",
+      "orderId": "#ORD003",
+      "customerId": "#CUST003",
+      "customerName": "Alice Brown",
+      "date": "2024-12-18",
+      "productName": "Bluetooth Speaker",
+      "price": 75.49,
+      "status": "Pending",
+      "img": "https://example.com/images/bluetooth-speaker.jpg"
+  },
+  {
+      "id": "4",
+      "orderId": "#ORD004",
+      "customerId": "#CUST004",
+      "customerName": "Bob Johnson",
+      "date": "2024-12-17",
+      "productName": "Laptop",
+      "price": 899.00,
+      "status": "Delivered",
+      "img": "https://example.com/images/laptop.jpg"
+  },
+  {
+      "id": "5",
+      "orderId": "#ORD005",
+      "customerId": "#CUST005",
+      "customerName": "Chris Lee",
+      "date": "2024-12-16",
+      "productName": "Gaming Mouse",
+      "price": 49.99,
+      "status": "Canceled",
+      "img": "https://example.com/images/gaming-mouse.jpg"
+  },
+  {
+      "id": "6",
+      "orderId": "#ORD006",
+      "customerId": "#CUST006",
+      "customerName": "Diana Green",
+      "date": "2024-12-15",
+      "productName": "Mechanical Keyboard",
+      "price": 89.99,
+      "status": "Delivered",
+      "img": "https://example.com/images/mechanical-keyboard.jpg"
+  },
+  {
+      "id": "7",
+      "orderId": "#ORD007",
+      "customerId": "#CUST007",
+      "customerName": "Ethan White",
+      "date": "2024-12-14",
+      "productName": "External Hard Drive",
+      "price": 129.00,
+      "status": "Shipped",
+      "img": "https://example.com/images/external-hard-drive.jpg"
+  },
+  {
+      "id": "8",
+      "orderId": "#ORD008",
+      "customerId": "#CUST008",
+      "customerName": "Fiona Black",
+      "date": "2024-12-13",
+      "productName": "Smartphone",
+      "price": 699.00,
+      "status": "Delivered",
+      "img": "https://example.com/images/smartphone.jpg"
+  },
+  {
+      "id": "9",
+      "orderId": "#ORD009",
+      "customerId": "#CUST009",
+      "customerName": "George King",
+      "date": "2024-12-12",
+      "productName": "Tablet",
+      "price": 329.99,
+      "status": "Returned",
+      "img": "https://example.com/images/tablet.jpg"
+  },
+  {
+      "id": "10",
+      "orderId": "#ORD010",
+      "customerId": "#CUST010",
+      "customerName": "Hannah Scott",
+      "date": "2024-12-11",
+      "productName": "Digital Camera",
+      "price": 459.50,
+      "status": "Pending",
+      "img": "https://example.com/images/digital-camera.jpg"
+  }
+]

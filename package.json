@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "highcharts-react-official": "^3.2.1",
+    "keep-react": "^1.6.1",
+    "phosphor-react": "^1.4.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router": "^7.0.2",

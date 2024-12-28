@@ -111,14 +111,14 @@ const DashboardLayout = () => {
 
 
                 {/* Shipping */}
-                <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
+               <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")}  to='shipping'> <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M11.3527 2.95875C10.8698 2.67825 10.572 2.15625 10.5728 1.59375V1.5915C10.5728 0.7125 9.8685 0 9 0C8.1315 0 7.42725 0.7125 7.42725 1.5915V1.59375C7.428 2.157 7.13025 2.67825 6.6465 2.95875C3.14625 4.99275 5.15775 11.745 1.5 12.9382V14.25H16.5V12.9382C12.8422 11.745 14.8538 4.99275 11.3527 2.95875ZM6.30675 12H4.89525C5.829 9.94425 5.5545 5.241 7.8 4.00875C6.47925 5.559 7.0875 9.63675 6.30675 12ZM9 2.25C8.586 2.25 8.25 1.914 8.25 1.5C8.25 1.08675 8.586 0.75 9 0.75C9.414 0.75 9.75 1.08675 9.75 1.5C9.75 1.914 9.414 2.25 9 2.25ZM6.75 15.75H11.25C11.25 16.9485 10.2052 18 9.02175 18C7.8375 18 6.75 16.9485 6.75 15.75Z" fill="#6F757E"/>
 </svg>
 
 
                     <p>Shipping</p>
-                </div>
+                </div></NavLink>
 
                 {/* Order */}
                <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")} to='order'>
@@ -133,7 +133,8 @@ const DashboardLayout = () => {
                </NavLink>
 
                 {/* Message */}
-                <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
+              <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")}  to='message'>
+              <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M9 0.75C4.2465 0.75 0 3.9195 0 8.25525C0 9.79275 0.55425 11.3025 1.53525 12.474C1.5765 13.8465 0.768 15.816 0.0405 17.25C1.992 16.8975 4.76625 16.119 6.024 15.348C12.951 17.0333 18 12.7943 18 8.25525C18 3.89625 13.7242 0.75 9 0.75ZM5.25 9.375C4.62825 9.375 4.125 8.87175 4.125 8.25C4.125 7.62825 4.62825 7.125 5.25 7.125C5.87175 7.125 6.375 7.62825 6.375 8.25C6.375 8.87175 5.87175 9.375 5.25 9.375ZM9 9.375C8.37825 9.375 7.875 8.87175 7.875 8.25C7.875 7.62825 8.37825 7.125 9 7.125C9.62175 7.125 10.125 7.62825 10.125 8.25C10.125 8.87175 9.62175 9.375 9 9.375ZM12.75 9.375C12.129 9.375 11.625 8.87175 11.625 8.25C11.625 7.62825 12.129 7.125 12.75 7.125C13.3717 7.125 13.875 7.62825 13.875 8.25C13.875 8.87175 13.3717 9.375 12.75 9.375Z" fill="#6F757E"/>
 </svg>
@@ -141,6 +142,7 @@ const DashboardLayout = () => {
 
                     <p>Message</p>
                 </div>
+              </NavLink>
 
                 {/* Profile */}
                 <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")}  to='profile'><div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
