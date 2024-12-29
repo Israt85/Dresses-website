@@ -1,13 +1,14 @@
 import React from 'react';
 import ChatBubble from './ChatBubble';
+import AllMessages from './AllMessages';
 
 const Message = () => {
     return (
         <div className='font-Poppins min-h-screen'>
             <p className='m-6 text-xl font-bold font-Poppins'>Message</p>
             <div className='flex gap-10'>
-                <div className='w-[300px] h-[700px] border'>
-
+                <div className='w-[350px] h-auto border'>
+                   <AllMessages></AllMessages>
                 </div>
                 <div className='w-[690px] h-[700px] border'>
                      <p className='w-full flex px-6 py-4 items-center gap-2 border-b-2 h-24'>

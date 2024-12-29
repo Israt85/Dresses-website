@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "img": "../src/assets/Images/img2.png",
+        "name": "Leatrice Kulik",
+        "msg": "back to meeting",
+        "time": "8:30 AM"
+      },
+    {
+      "id": 2,
+      "img": "../src/assets/Images/img3.png",
+      "name": "James B",
+      "msg": "Voice message 00:30",
+      "time": "06:15 PM"
+    },
+    {
+      "id": 3,
+      "img": "../src/assets/Images/img4.png",
+      "name": "Jone Smith",
+      "msg": "Voice message 00:30",
+      "time": "1 Day ago"
+    },
+    {
+      "id": 4,
+      "img": "../src/assets/Images/img5.png",
+      "name": "Bob Brown",
+      "msg": "Let’s catch up later.",
+      "time": "1:45 PM"
+    },
+    {
+      "id": 5,
+      "img": "../src/assets/Images/img6.png",
+      "name": "Emma Wilson",
+      "msg": "Thanks for your help!",
+      "time": "2:30 PM"
+    },
+    {
+      "id": 6,
+      "img": "../src/assets/Images/img7.png",
+      "name": "Chris Lee",
+      "msg": "I’ll send you the details soon.",
+      "time": "3:00 PM"
+    },
+    {
+      "id": 7,
+      "img": "../src/assets/Images/img8.jpeg",
+      "name": "Sophia Davis",
+      "msg": "Can you review this document?",
+      "time": "4:20 PM"
+    },
+    {
+      "id": 8,
+      "img": "../src/assets/Images/img9.png",
+      "name": "Daniel Martinez",
+      "msg": "Let’s finalize the project plan.",
+      "time": "5:10 PM"
+    },
+    {
+      "id": 9,
+      "img": "../src/assets/Images/img10.png",
+      "name": "Olivia Garcia",
+      "msg": "I’m looking forward to the event!",
+      "time": "6:45 PM"
+    }
+  ]
+  
