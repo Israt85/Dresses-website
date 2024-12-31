@@ -160,10 +160,15 @@ const DashboardLayout = () => {
 
                     <p>Profile</p>
                 </div></NavLink>
+                <NavLink to='edit'> Edit </NavLink>
+                <NavLink to='Qurierdetails'> Details </NavLink>
                
             </div>
             <div className='w-full'>
-                <Outlet></Outlet>
+                <Outlet>
+                  
+
+                </Outlet>
             </div>
 
         </div>

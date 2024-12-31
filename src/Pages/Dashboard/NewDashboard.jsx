@@ -27,7 +27,7 @@ const NewDashboard = () => {
           </div>
           </div>
         </div>
-        <div className='w-full min-h-screen my-10'>
+        <div className='w-full min-h-screen my-2'>
            <LatestOrder></LatestOrder>
         </div>
        </div>
