@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 
 const Login = () => {
     return (
-        <div className='w-[960px] shadow-2xl flex flex-row-reverse justify-center items-center my-20 mx-auto h-[560px] border'>
+        <div className='w-full lg:w-[960px] shadow-2xl flex lg:flex-row-reverse flex-col justify-center items-center my-20 mx-auto h-auto lg:h-[560px] border'>
            <div className="flex-1 bg-[#EC008C] overflow-hidden flex flex-col items-end justify-start pt-0 pb-[50px] pl-[50px] pr-[65px] box-border gap-[50px] min-w-[312px] max-w-full mq450:pb-8 mq450:box-border mq675:gap-[25px] mq675:pl-[25px] mq675:pr-8 mq675:box-border">
   <div className="self-stretch flex flex-row items-start justify-end py-0 pl-0 pr-[15px] box-border max-w-full">
     <div className="h-[345px] w-[593px] relative max-w-[170%] shrink-0">
@@ -19,7 +19,7 @@ const Login = () => {
     <div className="h-[100px] w-[100px] relative rounded-[50%] [background:linear-gradient(-90deg,#ec008c,#ff6dce)]" />
   </div>
 </div>
-        <div className=' w-[480px] h-full'>
+        <div className=' w-full lg:w-[480px] h-full'>
             <img className='w-[116px] m-8 h-[43px]' src={logo} alt="" />
            <div className='flex justify-center mt-10 items-center'>
            <h2 className='text-2xl font-bold'>Login</h2>
@@ -29,7 +29,7 @@ const Login = () => {
           <label className="label">
             <span className="label-text text-lg">Email</span>
           </label>
-          <input type="email" placeholder="Enter your email" className="input rounded-full input-bordered" required />
+          <input type="email" placeholder="Enter your email" className="input w-full rounded-full input-bordered" required />
           <div>
           <svg className='absolute right-4 -mt-8' width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M8 8.47533L0.01 2H15.99L8 8.47533ZM8 10.1913L0 3.708V14H16V3.708L8 10.1913Z" fill="#6F757E"/>
@@ -49,7 +49,7 @@ const Login = () => {
 
           </div>
         </div>
-        <Link to='dashboard'><div className="form-control mt-6">
+        <Link to='dashboard/newdash'><div className="form-control mt-6">
           <button className="btn rounded-full hover:bg-[rgb(236,0,140)] text-white bg-[rgb(236,0,140)]">Login</button>
         </div></Link>
       </form>

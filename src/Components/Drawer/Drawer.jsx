@@ -1,23 +1,26 @@
-import React, { useEffect, useState } from 'react';
-import { Link, NavLink, Outlet } from 'react-router';
-import logo from '../assets/Images/4155ecce83f378e39dae19cecca7729b.png'
-import Drawer from '../Components/Drawer/Drawer';
+import { Link } from 'phosphor-react';
+import React, { useState } from 'react';
+import { NavLink } from 'react-router';
 
-const DashboardLayout = () => {
-    const [clickable, setClickable]= useState(false)
-   const handleClick = ()=>{
-    setClickable(!clickable)
-    console.log('clicked');
-   }
+const Drawer = () => {
+     const [clickable, setClickable]= useState(false)
+       const handleClick = ()=>{
+        setClickable(!clickable)
+        console.log('clicked');
+       }
     return (
-        <div className='bg-[#F8F8F8] overflow-hidden flex'>
-            <div className='w-[218px] flex flex-col pt-10 items-center gap-6 m-4 rounded-lg text-[#6F757E] bg-white min-h-screen'>
-                <img className='w-[116px] h-[43px]' src={logo} alt="" />
-                {/* Dashboard */}
-                <div className='lg:hidden block'>
-                <Drawer></Drawer>
-                </div>
-              <div className='lg:block hidden'>
+        <div>
+            <div className="drawer">
+  <input id="my-drawer" type="checkbox" className="drawer-toggle" />
+  <div className="drawer-content">
+    {/* Page content here */}
+    <label htmlFor="my-drawer" className="btn btn-primary drawer-button">Open drawer</label>
+  </div>
+  <div className="drawer-side">
+    <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
+    <ul className="menu bg-base-200 text-base-content min-h-full w-60 p-4">
+      {/* Sidebar content here */}
+      <div>
               <NavLink className={({ isActive }) => (isActive ? "flex justify-center items-center gap-4 w-[168px] h-[45px] rounded-md text-white bg-[#EC008C]  hover:shadow-md" : "")} to="newdash">
                <div className='flex mx-2 px-6 items-center gap-4 w-[168px] h-[45px]'>
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -172,16 +175,11 @@ const DashboardLayout = () => {
                 <NavLink to='orderdetails'> Order Details </NavLink>
                
               </div>
-            </div>
-            <div className='w-full'>
-                <Outlet>
-                  
-
-                </Outlet>
-            </div>
-
+    </ul>
+  </div>
+</div>
         </div>
     );
 };
 
-export default DashboardLayout;
+export default Drawer;
