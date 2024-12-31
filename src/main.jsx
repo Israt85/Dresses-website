@@ -14,6 +14,7 @@ import Order from './Pages/Order/Order.jsx';
 import Shipping from './Pages/Shipping/Shipping.jsx';
 import Message from './Pages/Message/Message.jsx';
 import QurierDetails from './Pages/Shipping/QurierDetails.jsx';
+import OrderDetails from './Pages/Order/OrderDetails.jsx';
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
@@ -29,6 +30,7 @@ createRoot(document.getElementById('root')).render(
     <Route path="editproduct" element={<EditProduct/>} /> 
     <Route path="profile" element={<Profile/>} /> 
     <Route path="order" element={<Order/>} /> 
+    <Route path="orderdetails" element={<OrderDetails/>} /> 
     <Route path="shipping" element={<Shipping/>} /> 
     <Route path="message" element={<Message/>} /> 
     <Route path="edit" element={<EditProfile/>} /> 

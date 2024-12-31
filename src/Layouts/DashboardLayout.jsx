@@ -162,6 +162,7 @@ const DashboardLayout = () => {
                 </div></NavLink>
                 <NavLink to='edit'> Edit </NavLink>
                 <NavLink to='Qurierdetails'> Details </NavLink>
+                <NavLink to='orderdetails'> Order Details </NavLink>
                
             </div>
             <div className='w-full'>
